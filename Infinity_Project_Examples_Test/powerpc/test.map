@@ -1,0 +1,95 @@
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+                0x00f00000                . = 0xf00000
+
+.startup        0x00f00000       0x34
+ startup.o(.text)
+ .text          0x00f00000       0x34 startup.o
+                0x00f00000                _Reset
+
+.text           0x00f00034      0x2d0
+ *(.text)
+ .text          0x00f00034      0x2d0 test.o
+                0x00f00034                c_entry
+                0x00f00078                exit
+                0x00f0008c                write_tlb
+                0x00f000f4                set_tlb
+                0x00f00240                init_hw
+                0x00f002a0                putc_uart0
+
+.glink          0x00f00304        0x0
+ .glink         0x00000000        0x0 startup.o
+
+.eh_frame       0x00f00304        0x0
+ .eh_frame      0x00000000        0x0 startup.o
+
+.rodata         0x00f00304       0x13
+ .rodata        0x00f00304       0x13 test.o
+
+.rela.dyn       0x00f00318        0x0
+ .rela.iplt     0x00000000        0x0 startup.o
+ .rela.text     0x00000000        0x0 startup.o
+
+.data           0x00f00317        0x0
+ *(.data)
+ .data          0x00f00317        0x0 startup.o
+ .data          0x00f00317        0x0 test.o
+
+.sdata          0x00f00318        0x4
+ .sdata         0x00f00318        0x4 test.o
+                0x00f00318                UART0DR
+
+.bss            0x00f0031c        0x0
+ *(.bss COMMON)
+ .bss           0x00f0031c        0x0 startup.o
+ .bss           0x00f0031c        0x0 test.o
+                0x00f00320                . = ALIGN (0x8)
+                0x00f01320                . = (. + 0x1000)
+                0x00f01320                stack_top = .
+LOAD test.o
+LOAD startup.o
+OUTPUT(test.elf elf32-powerpc)
+
+.iplt           0x00f01320        0x0
+ .iplt          0x00000000        0x0 startup.o
+
+.stab           0x00000000       0xb4
+ .stab          0x00000000       0xb4 startup.o
+
+.stabstr        0x00000000       0x37
+ .stabstr       0x00000000       0x37 startup.o
+
+.debug_info     0x00000000      0x26c
+ .debug_info    0x00000000      0x26c test.o
+
+.debug_abbrev   0x00000000      0x113
+ .debug_abbrev  0x00000000      0x113 test.o
+
+.debug_aranges  0x00000000       0x20
+ .debug_aranges
+                0x00000000       0x20 test.o
+
+.debug_line     0x00000000       0x6c
+ .debug_line    0x00000000       0x6c test.o
+
+.debug_str      0x00000000       0xfa
+ .debug_str     0x00000000       0xfa test.o
+                                0x11e (size before relaxing)
+
+.comment        0x00000000       0x11
+ .comment       0x00000000       0x11 test.o
+                                 0x12 (size before relaxing)
+
+.PPC.EMB.apuinfo
+                0x00000000       0x18
+ .PPC.EMB.apuinfo
+                0x00000000       0x18 test.o
+
+.debug_frame    0x00000000       0xe4
+ .debug_frame   0x00000000       0xe4 test.o

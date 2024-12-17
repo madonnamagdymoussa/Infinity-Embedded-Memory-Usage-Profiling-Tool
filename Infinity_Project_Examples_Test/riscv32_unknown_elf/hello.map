@@ -1,0 +1,50 @@
+
+There are no discarded input sections
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD C:\Users\DELL\AppData\Local\Temp\cciRU4N4.o
+                0x20400000                        . = 0x20400000
+
+.text           0x20400000       0x44
+ *(.text)
+ .text          0x20400000       0x44 C:\Users\DELL\AppData\Local\Temp\cciRU4N4.o
+                0x20400000                _start
+
+.gnu_build_id
+ *(.note.gnu.build-id)
+
+.rodata         0x20400044        0x8
+ *(.rodata)
+ .rodata        0x20400044        0x8 C:\Users\DELL\AppData\Local\Temp\cciRU4N4.o
+
+.rela.dyn       0x2040004c        0x0
+ .rela.text     0x2040004c        0x0 C:\Users\DELL\AppData\Local\Temp\cciRU4N4.o
+                0x80000000                        . = 0x80000000
+
+.data           0x80000000        0x0
+ *(.data)
+ .data          0x80000000        0x0 C:\Users\DELL\AppData\Local\Temp\cciRU4N4.o
+
+.sdata
+ *(.sdata)
+
+.bss            0x80000000        0x0
+ .bss           0x80000000        0x0 C:\Users\DELL\AppData\Local\Temp\cciRU4N4.o
+
+.debug
+ *(.debug)
+                0x80001000                        . = (. + 0x1000)
+                0x80001000                        stack_top = .
+                0x80001000                        _end = .
+OUTPUT(hello.elf elf32-littleriscv)
+
+.riscv.attributes
+                0x00000000       0x50
+ .riscv.attributes
+                0x00000000       0x50 C:\Users\DELL\AppData\Local\Temp\cciRU4N4.o

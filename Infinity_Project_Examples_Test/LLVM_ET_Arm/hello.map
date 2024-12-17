@@ -1,0 +1,281 @@
+     VMA      LMA     Size Align Out     In      Symbol
+    3000     3000     1e70     4 .text
+    3000     3000       d4     4         C:\Users\DELL\AppData\Local\Temp\hello-3e7817.o:(.text)
+    3000     3000        0     1                 $t
+    3001     3001       1c     1                 delay
+    301d     301d       5c     1                 uart_init
+    305c     305c        0     1                 $d
+    3078     3078        0     1                 $t
+    3079     3079       3c     1                 uart_putc
+    30ac     30ac        0     1                 $d
+    30b4     30b4        0     1                 $t
+    30b5     30b5       20     1                 main
+    30d0     30d0        0     1                 $d
+    30d4     30d4        0     4         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_printf.c.o):(.text)
+    30d4     30d4       2c     4         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_printf.c.o):(.text.printf)
+    30d4     30d4        0     1                 $t
+    30d5     30d5       2c     1                 printf
+    30fc     30fc        0     1                 $d
+    3100     3100        0     4         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_vfprintf.c.o):(.text)
+    3100     3100      b04     4         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_vfprintf.c.o):(.text.vfprintf)
+    3100     3100        0     1                 $t
+    3101     3101      b04     1                 vfprintf
+    3101     3101      b04     1                 __d_vfprintf
+    319c     319c        0     1                 $d
+    31c4     31c4        0     1                 $t
+    33d4     33d4        0     1                 $d
+    33f0     33f0        0     1                 $t
+    33f8     33f8        0     1                 $d
+    33fc     33fc        0     1                 $t
+    384c     384c        0     1                 $d
+    3850     3850        0     1                 $t
+    3890     3890        0     1                 $d
+    38a4     38a4        0     1                 $t
+    3bf8     3bf8        0     1                 $d
+    3c04     3c04      158     4         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_vfprintf.c.o):(.text.skip_to_arg)
+    3c04     3c04        0     1                 $t
+    3c05     3c05      158     1                 skip_to_arg
+    3d58     3d58        0     1                 $d
+    3d5c     3d5c       5a     2         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_vfprintf.c.o):(.text.__ultoa_invert)
+    3d5c     3d5c        0     1                 $t
+    3d5d     3d5d       5a     1                 __ultoa_invert
+    3db8     3db8        0     4         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_dtox_engine.c.o):(.text)
+    3db8     3db8      130     4         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_dtox_engine.c.o):(.text.__dtox_engine)
+    3db8     3db8        0     1                 $t
+    3db9     3db9      130     1                 __dtox_engine
+    3edc     3edc        0     1                 $d
+    3ee8     3ee8        0     4         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_string_strnlen.c.o):(.text)
+    3ee8     3ee8       1e     2         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_string_strnlen.c.o):(.text.strnlen)
+    3ee8     3ee8        0     1                 $t
+    3ee9     3ee9       1e     1                 strnlen
+    3f08     3f08        0     4         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_dtoa_ryu.c.o):(.text)
+    3f08     3f08      4aa     4         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_dtoa_ryu.c.o):(.text.__dtoa_engine)
+    3f08     3f08        0     1                 $t
+    3f09     3f09      4aa     1                 __dtoa_engine
+    42d4     42d4        0     1                 $d
+    42e0     42e0        0     1                 $t
+    43b2     43b2       12     2         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_dtoa_ryu.c.o):(.text.div10)
+    43b2     43b2        0     1                 $t
+    43b3     43b3       12     1                 div10
+    43c4     43c4       20     4         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_dtoa_ryu.c.o):(.text.umulh)
+    43c4     43c4        0     1                 $t
+    43c5     43c5       20     1                 umulh
+    43dc     43dc        0     1                 $d
+    43e4     43e4      216     2         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_dtoa_ryu.c.o):(.text.mulShiftAll64)
+    43e4     43e4        0     1                 $t
+    43e5     43e5      216     1                 mulShiftAll64
+    45fa     45fa       26     2         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_dtoa_ryu.c.o):(.text.decimalLength17)
+    45fa     45fa        0     1                 $t
+    45fb     45fb       26     1                 decimalLength17
+    4620     4620        0     4         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_log10.c.o):(.text)
+    4620     4620        c     4         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_log10.c.o):(.text.__log10Pow2)
+    4620     4620        0     1                 $t
+    4621     4621        c     1                 __log10Pow2
+    4628     4628        0     1                 $d
+    462c     462c        c     4         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_log10.c.o):(.text.__log10Pow5)
+    462c     462c        0     1                 $t
+    462d     462d        c     1                 __log10Pow5
+    4634     4634        0     1                 $d
+    4638     4638        0     4         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_pow5bits.c.o):(.text)
+    4638     4638       10     4         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_pow5bits.c.o):(.text.__pow5bits)
+    4638     4638        0     1                 $t
+    4639     4639       10     1                 __pow5bits
+    4644     4644        0     1                 $d
+    4648     4648        0     4         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_table.c.o):(.text)
+    4648     4648       34     4         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_table.c.o):(.text.__pow5Factor)
+    4648     4648        0     1                 $t
+    4649     4649       34     1                 __pow5Factor
+    466c     466c        0     1                 $d
+    467c     467c       f8     4         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_table.c.o):(.text.__double_computePow5)
+    467c     467c        0     1                 $t
+    467d     467d       f8     1                 __double_computePow5
+    4768     4768        0     1                 $d
+    4774     4774       fc     4         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_table.c.o):(.text.__double_computeInvPow5)
+    4774     4774        0     1                 $t
+    4775     4775       fc     1                 __double_computeInvPow5
+    4864     4864        0     1                 $d
+    4870     4870        0     4         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_umul128.c.o):(.text)
+    4870     4870       6c     2         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_umul128.c.o):(.text.__umul128)
+    4870     4870        0     1                 $t
+    4871     4871       6c     1                 __umul128
+    48dc     48dc       28     2         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_umul128.c.o):(.text.__shiftright128)
+    48dc     48dc        0     1                 $t
+    48dd     48dd       28     1                 __shiftright128
+    4904     4904      1a2     4         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libclang_rt.builtins.a(udivsi3.S.obj):(.text)
+    4904     4904        0     1                 $t
+    4905     4905      1a2     1                 __aeabi_uidiv
+    4905     4905      1a2     1                 __udivsi3
+    4aa8     4aa8        0     4         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libclang_rt.builtins.a(ashldi3.c.obj):(.text)
+    4aa8     4aa8       2e     2         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libclang_rt.builtins.a(ashldi3.c.obj):(.text.__ashldi3)
+    4aa8     4aa8        0     1                 $t
+    4aa9     4aa9       2e     1                 __ashldi3
+    4aa9     4aa9       2e     1                 __aeabi_llsl
+    4ad8     4ad8        0     4         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libclang_rt.builtins.a(lshrdi3.c.obj):(.text)
+    4ad8     4ad8       2e     2         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libclang_rt.builtins.a(lshrdi3.c.obj):(.text.__lshrdi3)
+    4ad8     4ad8        0     1                 $t
+    4ad9     4ad9       2e     1                 __lshrdi3
+    4ad9     4ad9       2e     1                 __aeabi_llsr
+    4b08     4b08        0     4         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libclang_rt.builtins.a(muldi3.c.obj):(.text)
+    4b08     4b08       34     2         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libclang_rt.builtins.a(muldi3.c.obj):(.text.__muldi3)
+    4b08     4b08        0     1                 $t
+    4b09     4b09       34     1                 __muldi3
+    4b09     4b09       34     1                 __aeabi_lmul
+    4b3c     4b3c        0     4         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libclang_rt.builtins.a(aeabi_div0.c.obj):(.text)
+    4b3c     4b3c        2     2         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libclang_rt.builtins.a(aeabi_div0.c.obj):(.text.__aeabi_idiv0)
+    4b3c     4b3c        0     1                 $t
+    4b3d     4b3d        2     1                 __aeabi_idiv0
+    4b3e     4b3e        2     2         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libclang_rt.builtins.a(aeabi_div0.c.obj):(.text.__aeabi_ldiv0)
+    4b3e     4b3e        0     1                 $t
+    4b3f     4b3f        2     1                 __aeabi_ldiv0
+    4b40     4b40       14     4         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libclang_rt.builtins.a(aeabi_uldivmod.S.obj):(.text)
+    4b40     4b40        0     1                 $t
+    4b41     4b41       14     1                 __aeabi_uldivmod
+    4b54     4b54        0     4         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libclang_rt.builtins.a(udivmoddi4.c.obj):(.text)
+    4b54     4b54      2c0     4         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libclang_rt.builtins.a(udivmoddi4.c.obj):(.text.__udivmoddi4)
+    4b54     4b54        0     1                 $t
+    4b55     4b55      2c0     1                 __udivmoddi4
+    4df0     4df0        0     1                 $d
+    4e14     4e14        0     4         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libclang_rt.builtins.a(clzsi2.c.obj):(.text)
+    4e14     4e14       5c     2         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libclang_rt.builtins.a(clzsi2.c.obj):(.text.__clzsi2)
+    4e14     4e14        0     1                 $t
+    4e15     4e15       5c     1                 __clzsi2
+    4e70     4e70        0     1         __text_end = .
+    4e70     4e70        0     1         . = ALIGN ( 8 )
+    4e70     4e70      35c     8 .rodata
+    4e70     4e70        4     4         C:\Users\DELL\AppData\Local\Temp\hello-3e7817.o:(.rodata)
+    4e70     4e70        4     1                 stdin
+    4e70     4e70        4     1                 stdout
+    4e70     4e70        4     1                 stderr
+    4e74     4e74       1c     1         <internal>:(.rodata.str1.1)
+    4e90     4e90      33c     8         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_table.c.o):(.rodata)
+    4e90     4e90       d0     1                 DOUBLE_POW5_SPLIT2
+    4f60     4f60       d0     1                 DOUBLE_POW5_TABLE
+    5030     5030       54     1                 POW5_OFFSETS
+    5088     5088       f0     1                 DOUBLE_POW5_INV_SPLIT2
+    5178     5178       54     1                 POW5_INV_OFFSETS
+    51cc     51cc       2c     4 .except_unordered
+    51cc     51cc        4     1         . = ALIGN ( 8 )
+    51d0     51d0       28     4         <internal>:(.ARM.exidx)
+20000000     51f8       30     4 .data
+20000000     51f8       30     4         C:\Users\DELL\AppData\Local\Temp\hello-3e7817.o:(.data)
+20000000     51f8        4     1                 gpio_dir_set
+20000004     51fc        4     1                 uart_starttx
+20000008     5200        4     1                 uart_txdrdy
+2000000c     5204        4     1                 uart_enable
+20000010     5208        4     1                 uart_pseltxd
+20000014     520c        4     1                 uart_txd
+20000018     5210        4     1                 uart_baud_rate
+2000001c     5214        4     1                 uart_config
+20000020     5218       10     1                 __stdio
+20000030     5228        0     1         . = ALIGN ( 8 )
+20000030     5228        0     1 PROVIDE ( __data_start = ADDR ( .data ) )
+20000030     5228        0     1 PROVIDE ( __data_source = LOADADDR ( .data ) )
+20000030     5228        0     1 .tdata
+20000030     5228        0     1         PROVIDE ( __data_end = . )
+20000030     5228        0     1 PROVIDE ( __tdata_source_end = LOADADDR ( .tdata ) + SIZEOF ( .tdata ) )
+20000030     5228        0     1 PROVIDE ( __data_source_end = __tdata_source_end )
+20000030     5228        0     1 PROVIDE ( __data_size = __data_end - __data_start )
+20000030     5228        0     1 PROVIDE ( __data_source_size = __data_source_end - __data_source )
+20000030 20000030        0     1 .tbss
+20000030 20000030        0     1 PROVIDE ( __tls_align = MAX ( ALIGNOF ( .tdata ) , ALIGNOF ( .tbss ) ) )
+20000030 20000030        0     1 .bss
+20000030 20000030        0     1         . = ALIGN ( 8 )
+20000030 20000030        0     1         __bss_end = .
+20000030 20000030        0     1 _end = __bss_end
+20000030 20000030        0     1 
+       0        0      952     1 .debug_abbrev
+       0        0      148     1         C:\Users\DELL\AppData\Local\Temp\hello-3e7817.o:(.debug_abbrev)
+     148      148       b2     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_printf.c.o):(.debug_abbrev)
+     1fa      1fa      1bf     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_vfprintf.c.o):(.debug_abbrev)
+     3b9      3b9       b1     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_dtox_engine.c.o):(.debug_abbrev)
+     46a      46a       87     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_string_strnlen.c.o):(.debug_abbrev)
+     4f1      4f1      22c     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_dtoa_ryu.c.o):(.debug_abbrev)
+     71d      71d       64     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_log10.c.o):(.debug_abbrev)
+     781      781       62     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_pow5bits.c.o):(.debug_abbrev)
+     7e3      7e3       e6     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_table.c.o):(.debug_abbrev)
+     8c9      8c9       89     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_umul128.c.o):(.debug_abbrev)
+       0        0     14cb     1 .debug_info
+       0        0      1e8     1         C:\Users\DELL\AppData\Local\Temp\hello-3e7817.o:(.debug_info)
+     1e8      1e8       84     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_printf.c.o):(.debug_info)
+     26c      26c      455     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_vfprintf.c.o):(.debug_info)
+     6c1      6c1      12c     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_dtox_engine.c.o):(.debug_info)
+     7ed      7ed       6e     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_string_strnlen.c.o):(.debug_info)
+     85b      85b      7d5     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_dtoa_ryu.c.o):(.debug_info)
+    1030     1030       8b     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_log10.c.o):(.debug_info)
+    10bb     10bb       6e     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_pow5bits.c.o):(.debug_info)
+    1129     1129      236     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_table.c.o):(.debug_info)
+    135f     135f      16c     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_umul128.c.o):(.debug_info)
+       0        0      664     1 .debug_str_offsets
+       0        0       b0     1         C:\Users\DELL\AppData\Local\Temp\hello-3e7817.o:(.debug_str_offsets)
+      b0       b0       3c     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_printf.c.o):(.debug_str_offsets)
+      ec       ec      16c     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_vfprintf.c.o):(.debug_str_offsets)
+     258      258       80     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_dtox_engine.c.o):(.debug_str_offsets)
+     2d8      2d8       30     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_string_strnlen.c.o):(.debug_str_offsets)
+     308      308      1c0     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_dtoa_ryu.c.o):(.debug_str_offsets)
+     4c8      4c8       38     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_log10.c.o):(.debug_str_offsets)
+     500      500       34     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_pow5bits.c.o):(.debug_str_offsets)
+     534      534       94     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_table.c.o):(.debug_str_offsets)
+     5c8      5c8       9c     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_umul128.c.o):(.debug_str_offsets)
+       0        0      b21     1 .debug_str
+       0        0      b21     1         <internal>:(.debug_str)
+       0        0      144     1 .debug_addr
+       0        0       48     1         C:\Users\DELL\AppData\Local\Temp\hello-3e7817.o:(.debug_addr)
+      48       48        c     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_printf.c.o):(.debug_addr)
+      54       54       30     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_vfprintf.c.o):(.debug_addr)
+      84       84       14     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_dtox_engine.c.o):(.debug_addr)
+      98       98        c     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_string_strnlen.c.o):(.debug_addr)
+      a4       a4       4c     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_dtoa_ryu.c.o):(.debug_addr)
+      f0       f0       10     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_log10.c.o):(.debug_addr)
+     100      100        c     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_pow5bits.c.o):(.debug_addr)
+     10c      10c       28     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_table.c.o):(.debug_addr)
+     134      134       10     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_umul128.c.o):(.debug_addr)
+       0        0       29     1 .comment
+       0        0       29     1         <internal>:(.comment)
+       0        0       41     1 .ARM.attributes
+       0        0       41     1         C:\Users\DELL\AppData\Local\Temp\hello-3e7817.o:(.ARM.attributes)
+       0        0      384     4 .debug_frame
+       0        0       74     4         C:\Users\DELL\AppData\Local\Temp\hello-3e7817.o:(.debug_frame)
+      74       74       38     4         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_printf.c.o):(.debug_frame)
+      ac       ac       80     4         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_vfprintf.c.o):(.debug_frame)
+     12c      12c       38     4         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_dtox_engine.c.o):(.debug_frame)
+     164      164       34     4         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_string_strnlen.c.o):(.debug_frame)
+     198      198       b8     4         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_dtoa_ryu.c.o):(.debug_frame)
+     250      250       34     4         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_log10.c.o):(.debug_frame)
+     284      284       24     4         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_pow5bits.c.o):(.debug_frame)
+     2a8      2a8       80     4         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_table.c.o):(.debug_frame)
+     328      328       5c     4         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_umul128.c.o):(.debug_frame)
+       0        0     1b50     1 .debug_line
+       0        0      13d     1         C:\Users\DELL\AppData\Local\Temp\hello-3e7817.o:(.debug_line)
+     13d      13d       82     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_printf.c.o):(.debug_line)
+     1bf      1bf      b9d     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_vfprintf.c.o):(.debug_line)
+     d5c      d5c      1d4     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_dtox_engine.c.o):(.debug_line)
+     f30      f30       94     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_string_strnlen.c.o):(.debug_line)
+     fc4      fc4      748     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_dtoa_ryu.c.o):(.debug_line)
+    170c     170c       b3     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_log10.c.o):(.debug_line)
+    17bf     17bf       97     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_pow5bits.c.o):(.debug_line)
+    1856     1856      21d     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_table.c.o):(.debug_line)
+    1a73     1a73       dd     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_umul128.c.o):(.debug_line)
+       0        0      752     1 .debug_line_str
+       0        0      752     1         <internal>:(.debug_line_str)
+       0        0     2b3b     1 .debug_loclists
+       0        0       2a     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_printf.c.o):(.debug_loclists)
+      2a       2a     10b7     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_vfprintf.c.o):(.debug_loclists)
+    10e1     10e1      1eb     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_dtox_engine.c.o):(.debug_loclists)
+    12cc     12cc       25     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_string_strnlen.c.o):(.debug_loclists)
+    12f1     12f1     1040     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_dtoa_ryu.c.o):(.debug_loclists)
+    2331     2331       34     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_log10.c.o):(.debug_loclists)
+    2365     2365       1e     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_pow5bits.c.o):(.debug_loclists)
+    2383     2383      279     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_table.c.o):(.debug_loclists)
+    25fc     25fc      53f     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_umul128.c.o):(.debug_loclists)
+       0        0      22e     1 .debug_rnglists
+       0        0      148     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_vfprintf.c.o):(.debug_rnglists)
+     148      148       9c     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_dtoa_ryu.c.o):(.debug_rnglists)
+     1e4      1e4       17     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_log10.c.o):(.debug_rnglists)
+     1fb      1fb       1c     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_table.c.o):(.debug_rnglists)
+     217      217       17     1         D:\LLVM_EmbeddedToolChain_Arm\LLVM-ET-Arm-19.1.1-Windows-x86_64\LLVM-ET-Arm-19.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv6m_soft_nofp_exn_rtti\lib\libc.a(libc_tinystdio_ryu_umul128.c.o):(.debug_rnglists)
+       0        0      8d0     4 .symtab
+       0        0      8d0     4         <internal>:(.symtab)
+       0        0       f9     1 .shstrtab
+       0        0       f9     1         <internal>:(.shstrtab)
+       0        0      494     1 .strtab
+       0        0      494     1         <internal>:(.strtab)

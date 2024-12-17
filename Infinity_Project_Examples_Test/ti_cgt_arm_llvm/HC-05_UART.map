@@ -1,0 +1,541 @@
+******************************************************************************
+                  TI ARM Linker PC v20.2.7                     
+******************************************************************************
+>> Linked Tue Nov  5 17:25:25 2024
+
+OUTPUT FILE NAME:   <HC-05_UART.elf>
+ENTRY POINT SYMBOL: "_c_int00_noargs"  address: 00001ad9
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  FLASH                 00000000   00040000  00002192  0003de6e  R  X
+  SRAM                  20000000   00008000  00001494  00006b6c  RW X
+
+
+SEGMENT ALLOCATION MAP
+
+run origin  load origin   length   init length attrs members
+----------  ----------- ---------- ----------- ----- -------
+00000000    00000000    00002198   00002198    r-x
+  00000000    00000000    0000026c   0000026c    r-- .intvecs
+  0000026c    0000026c    00001906   00001906    r-x .text
+  00001b74    00001b74    00000468   00000468    r-- .const
+  00001fe0    00001fe0    000001b8   000001b8    r-- .cinit
+20000000    20000000    00001498   00000000    rw-
+  20000000    20000000    00000e1c   00000000    rw- .bss
+  20000e1c    20000e1c    00000478   00000000    rw- .data
+  20001298    20001298    00000200   00000000    rw- .stack
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.intvecs   0    00000000    0000026c     
+                  00000000    0000026c     tm4c123gh6pm_startup_ccs.obj (.intvecs)
+
+.text      0    0000026c    00001906     
+                  0000026c    00000814     GPIO.obj (.text)
+                  00000a80    000006a4     DMA.obj (.text)
+                  00001124    00000274     NVIC.obj (.text)
+                  00001398    00000258     SystemControl.obj (.text)
+                  000015f0    00000164     SystickTimer.obj (.text)
+                  00001754    0000012c     main.obj (.text)
+                  00001880    0000009c     rtsv7M4_T_le_v4SPD16_eabi.lib : memcpy_t2.asm.obj (.text)
+                  0000191c    00000096                                   : ull_div_t2.asm.obj (.text)
+                  000019b2    0000007a                                   : memset_t2.asm.obj (.text)
+                  00001a2c    00000068                                   : copy_decompress_lzss.c.obj (.text:decompress:lzss:__TI_decompress_lzss)
+                  00001a94    00000044                                   : autoinit.c.obj (.text:__TI_auto_init_nobinit_nopinit:__TI_auto_init_nobinit_nopinit)
+                  00001ad8    00000034                                   : boot_cortex_m.c.obj (.text:_c_int00_noargs:_c_int00_noargs)
+                  00001b0c    00000034                                   : rand.c.obj (.text:rand)
+                  00001b40    0000000e                                   : copy_decompress_none.c.obj (.text:decompress:none:__TI_decompress_none)
+                  00001b4e    0000000c                                   : copy_zero_init.c.obj (.text:decompress:ZI:__TI_zero_init)
+                  00001b5a    0000000c     tm4c123gh6pm_startup_ccs.obj (.text)
+                  00001b66    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : pre_init.c.obj (.text:_system_pre_init)
+                  00001b6a    00000004                                   : exit.c.obj (.text:abort:abort)
+                  00001b6e    00000002                                   : _lock.c.obj (.text:_nop)
+                  00001b70    00000002                                   : div0.asm.obj (.text)
+
+.const     0    00001b74    00000468     
+                  00001b74    00000300     DMA.obj (.const)
+                  00001e74    000000f0     GPIO.obj (.const)
+                  00001f64    00000060     NVIC.obj (.const)
+                  00001fc4    00000018     SystemControl.obj (.const:.string)
+
+.cinit     0    00001fe0    000001b8     
+                  00001fe0    00000193     (.cinit..data.load) [load image, compression = lzss]
+                  00002173    00000001     --HOLE-- [fill = 0]
+                  00002174    0000000c     (__TI_handler_table)
+                  00002180    00000008     (.cinit..bss.load) [load image, compression = zero_init]
+                  00002188    00000010     (__TI_cinit_table)
+
+.init_array 
+*          0    00000000    00000000     UNINITIALIZED
+
+.bss       0    20000000    00000e1c     UNINITIALIZED
+                  20000000    00000400     (.common:DestBuffer_DMA)
+                  20000400    00000400     (.common:SourceBuffer_DMA)
+                  20000800    00000400     (.common:ui8ControlTable)
+                  20000c00    00000200     (.common:SourceArray512)
+                  20000e00    00000018     (.common:ListDest)
+                  20000e18    00000004     (.common:MySystemClock)
+
+.data      0    20000e1c    00000478     UNINITIALIZED
+                  20000e1c    00000214     DMA_config.obj (.data)
+                  20001030    00000118     DMA.obj (.data)
+                  20001148    000000ac     UART.obj (.data)
+                  200011f4    00000054     main.obj (.data)
+                  20001248    00000030     GPIO.obj (.data)
+                  20001278    0000000a     GPIO_config.obj (.data)
+                  20001282    00000002     --HOLE--
+                  20001284    00000008     rtsv7M4_T_le_v4SPD16_eabi.lib : _lock.c.obj (.data:$O1$$)
+                  2000128c    00000004     SystickTimer.obj (.data)
+                  20001290    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : rand.c.obj (.data)
+
+.stack     0    20001298    00000200     UNINITIALIZED
+                  20001298    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : boot_cortex_m.c.obj (.stack)
+                  2000129c    000001fc     --HOLE--
+
+__llvm_prf_cnts 
+*          0    20000000    00000000     UNINITIALIZED
+
+MODULE SUMMARY
+
+       Module                         code   ro data   rw data
+       ------                         ----   -------   -------
+    .\
+       DMA.obj                        1700   768       1304   
+       main.obj                       300    0         2672   
+       GPIO.obj                       2068   240       48     
+       NVIC.obj                       628    96        0      
+       tm4c123gh6pm_startup_ccs.obj   12     620       0      
+       SystemControl.obj              600    24        0      
+       DMA_config.obj                 0      0         532    
+       SystickTimer.obj               356    0         4      
+       UART.obj                       0      0         172    
+       GPIO_config.obj                0      0         10     
+    +--+------------------------------+------+---------+---------+
+       Total:                         5664   1748      4742   
+                                                              
+    D:\CodeComposer\ccs\tools\compiler\ti-cgt-arm_20.2.7.LTS\lib\rtsv7M4_T_le_v4SPD16_eabi.lib
+       memcpy_t2.asm.obj              156    0         0      
+       ull_div_t2.asm.obj             150    0         0      
+       memset_t2.asm.obj              122    0         0      
+       copy_decompress_lzss.c.obj     104    0         0      
+       autoinit.c.obj                 68     0         0      
+       rand.c.obj                     52     0         4      
+       boot_cortex_m.c.obj            52     0         0      
+       copy_decompress_none.c.obj     14     0         0      
+       copy_zero_init.c.obj           12     0         0      
+       _lock.c.obj                    2      0         8      
+       exit.c.obj                     4      0         0      
+       pre_init.c.obj                 4      0         0      
+       div0.asm.obj                   2      0         0      
+    +--+------------------------------+------+---------+---------+
+       Total:                         742    0         12     
+                                                              
+       Stack:                         0      0         512    
+       Linker Generated:              0      439       0      
+    +--+------------------------------+------+---------+---------+
+       Grand Total:                   6406   2187      5266   
+
+
+LINKER GENERATED COPY TABLES
+
+__TI_cinit_table @ 00002188 records: 2, size/record: 8, table size: 16
+	.data: load addr=00001fe0, load size=00000193 bytes, run addr=20000e1c, run size=00000478 bytes, compression=lzss
+	.bss: load addr=00002180, load size=00000008 bytes, run addr=20000000, run size=00000e1c bytes, compression=zero_init
+
+
+LINKER GENERATED HANDLER TABLE
+
+__TI_handler_table @ 00002174 records: 3, size/record: 4, table size: 12
+	index: 0, handler: __TI_decompress_lzss
+	index: 1, handler: __TI_decompress_none
+	index: 2, handler: __TI_zero_init
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address   name                                         
+-------   ----                                         
+00001cf4  AlternateDestinationAddressPointerRegisters  
+00001bf4  AlternateSourceAddressPointerRegisters       
+00001b6b  C$$EXIT                                      
+20000f5c  DMAChannel0_MemToMem                         
+20000e5c  DMAChannel0_UARTChannel2RX                   
+20000edc  DMAChannel10_UARTChannel6RX                  
+20000eec  DMAChannel11_UARTChannel6TX                  
+20000e7c  DMAChannel16_UARTChannel3RX                  
+20000e8c  DMAChannel17_UARTChannel3TX                  
+20000e9c  DMAChannel18_UARTChannel4RX                  
+20000eac  DMAChannel19_UARTChannel4TX                  
+20000f6c  DMAChannel1_MemToMem                         
+20000efc  DMAChannel20_UARTChannel7RX                  
+20000f0c  DMAChannel21_UARTChannel7TX                  
+20000e3c  DMAChannel22_UARTChannel1RX                  
+20000e4c  DMAChannel23_UARTChannel1TX                  
+20000e6c  DMAChannel23_UARTChannel2TX                  
+20000fac  DMAChannel26_MemToMem                        
+20000f8c  DMAChannel28_MemToMem                        
+20000f9c  DMAChannel29_MemToMem                        
+20000f7c  DMAChannel30_MemToMem                        
+20000ebc  DMAChannel6_UARTChannel5RX                   
+20000ecc  DMAChannel7_UARTChannel5TX                   
+20000e1c  DMAChannel8_UARTChannel0RX                   
+20000e2c  DMAChannel9_UARTChannel0TX                   
+00000f6f  DMA_AssignChannel                            
+00000d01  DMA_ChannelAlternateControlStructureSet      
+00000b97  DMA_ChannelControlStructureSet               
+00001075  DMA_ChannelPeripheralScatterGatherSet        
+00001035  DMA_ChannelScatterGatherSet                  
+20000f3c  DMA_ChannelsConfigRX                         
+20000f1c  DMA_ChannelsConfigTX                         
+00000ee9  DMA_ConfigureChannelInterrupt                
+00000e51  DMA_ConfigureChannelSoftwareRequest          
+00000e9d  DMA_ConfigureChannelsRequests                
+00000b63  DMA_ConfigureControlTableBaseAddress         
+00000eb5  DMA_ConfigurePeripheralInterrupt             
+00000f2b  DMA_ConfigurePriority                        
+20000fd0  DMA_ControlTable_Arr                         
+20001000  DMA_ControlTable_PeripheralScatterGatherArr  
+00000fbf  DMA_DeAssignChannel                          
+00000b19  DMA_DisableChannelAttributes                 
+00000b7b  DMA_EnableChannel                            
+00000ac1  DMA_EnableChannelAttributes                  
+00000a81  DMA_ErrorHandler                             
+0000100f  DMA_MemoryToMemory_Transfer                  
+00000aa5  DMA_PeripheralInitialization                 
+000010c7  DMA_RegisterCallbackFunction_ErrorHandler    
+000010ad  DMA_RegisterCallbackFunction_SoftwareTransfer
+00000a8d  DMA_SoftwareTransferHandler                  
+20000000  DestBuffer_DMA                               
+00001c74  DestinationAddressPointerRegisters           
+000002b1  EXTIAIntHandler                              
+000002c1  EXTIBIntHandler                              
+000002d1  EXTICIntHandler                              
+000002e1  EXTIDIntHandler                              
+000002f1  EXTIEIntHandler                              
+00000301  EXTIFIntHandler                              
+20001260  GPIO_BIT_BAND_Registers                      
+0000046b  GPIO_ConfigureAlternateFunctionSelect        
+000004f7  GPIO_ConfigureAnalogModeSelect               
+0000060d  GPIO_ConfigureCommit                         
+0000056d  GPIO_ConfigureDigitalEnable                  
+00000879  GPIO_ConfigureInputPin                       
+000006c9  GPIO_ConfigureInterruptMask                  
+00000755  GPIO_ConfigureOutputPin                      
+2000127e  GPIO_ConfigurePin_PF0                        
+2000127c  GPIO_ConfigurePin_PF1                        
+2000127a  GPIO_ConfigurePin_PF2                        
+20001280  GPIO_ConfigurePin_PF3                        
+20001278  GPIO_ConfigurePin_PF4                        
+00000517  GPIO_ConfigurePortControl                    
+00000683  GPIO_EXTIClearInterrupt                      
+000009a9  GPIO_EnableAFSEL_GPTM                        
+000009f5  GPIO_EnableAFSEL_UART                        
+0000090b  GPIO_ReadBitBandBits                         
+0000039d  GPIO_SetData                                 
+0000082d  GPIO_SetInputStatus                          
+000007a1  GPIO_SetPinDirection                         
+00000311  GPIO_SetPinStatus                            
+000008d7  GPIO_ToggleBitBandBits                       
+00000429  GPIO_TogglePinValue                          
+0000093d  GPIO_WriteBitBandBits                        
+20001238  IdleLoopCounter                              
+20001220  IndexCounter                                 
+200011fc  ListA                                        
+20001200  ListB                                        
+20001204  ListC                                        
+20001208  ListD                                        
+20000e00  ListDest                                     
+20001210  ListE                                        
+20001218  ListF                                        
+20000e18  MySystemClock                                
+00001231  NVIC_AssignPriority                          
+0000115d  NVIC_Clear_Interrupt                         
+000011cd  NVIC_Clear_Pending                           
+00001125  NVIC_Enable_Interrupt                        
+00001205  NVIC_SetPriorityGrouping                     
+00001195  NVIC_Set_Pending                             
+20000fc8  Pt_DMAChannel0_MemToMem                      
+20000fcc  Pt_DMAChannel1_MemToMem                      
+20000fc0  Pt_DMAChannel28_MemToMem                     
+20000fc4  Pt_DMAChannel29_MemToMem                     
+20000fbc  Pt_DMAChannel30_MemToMem                     
+00000a57  RegisterCallbackFunction                     
+00001b5b  ResetISR                                     
+000015a7  SC_ADC_ClkIntialization                      
+00001579  SC_GetPWMFrequency                           
+000014dd  SC_GetSystemClock                            
+000013b3  SC_Initialization                            
+00001545  SC_PWMClkIntialization                       
+00001fd4  SC_PWMDIV                                    
+00001fc4  SC_SYSDIV                                    
+20001030  ScatterGatherFlag                            
+00001b74  SourceAddressPointerRegisters                
+20000c00  SourceArray512                               
+20001224  SourceBufferUART                             
+20000400  SourceBuffer_DMA                             
+20001230  SourceIndexCounterDMA                        
+20001234  SourceIndexCounterDMA356                     
+00001641  SysTickConfigureClockSource                  
+000016e7  SysTickGenerateDelay_Interrupt               
+0000165d  SysTickGenerateDelay_Polling                 
+00001631  SystickHandler                               
+00001735  Systick_ClearFlag                            
+000016d7  Systick_RegisterCallbackFunction             
+20001149  UARTDMA_RxFlag                               
+20001148  UARTDMA_TxFlag                               
+2000114a  UART_InterruptNum_Arr                        
+00001755  UnusedFunc1                                  
+20001498  __STACK_END                                  
+00000200  __STACK_SIZE                                 
+20001498  __STACK_TOP                                  
+00002188  __TI_CINIT_Base                              
+00002198  __TI_CINIT_Limit                             
+00002174  __TI_Handler_Table_Base                      
+00002180  __TI_Handler_Table_Limit                     
+00001a95  __TI_auto_init_nobinit_nopinit               
+00001a2d  __TI_decompress_lzss                         
+00001b41  __TI_decompress_none                         
+ffffffff  __TI_pprof_out_hndl                          
+ffffffff  __TI_prof_data_size                          
+ffffffff  __TI_prof_data_start                         
+00000000  __TI_static_base__                           
+00001b4f  __TI_zero_init                               
+00001b71  __aeabi_idiv0                                
+00001b71  __aeabi_ldiv0                                
+000019b3  __aeabi_memclr                               
+000019b3  __aeabi_memclr4                              
+000019b3  __aeabi_memclr8                              
+00001881  __aeabi_memcpy                               
+00001881  __aeabi_memcpy4                              
+00001881  __aeabi_memcpy8                              
+000019b5  __aeabi_memset                               
+000019b5  __aeabi_memset4                              
+000019b5  __aeabi_memset8                              
+0000191d  __aeabi_uldivmod                             
+ffffffff  __binit__                                    
+ffffffff  __c_args__                                   
+UNDEFED   __mpu_init                                   
+20001298  __stack                                      
+20000000  __start___llvm_prf_cnts                      
+20000000  __stop___llvm_prf_cnts                       
+00001ad9  _c_int00_noargs                              
+20001284  _lock                                        
+00001b6f  _nop                                         
+UNDEFED   _system_post_cinit                           
+00001b67  _system_pre_init                             
+20001288  _unlock                                      
+00001b6b  abort                                        
+ffffffff  binit                                        
+200011f4  charater1                                    
+00000000  g_pfnVectors                                 
+20001144  handlerCounter                               
+2000122c  indexCounter                                 
+00001783  main                                         
+00001881  memcpy                                       
+000019bb  memset                                       
+200011f8  ptr_charater1                                
+00001b0d  rand                                         
+20000800  ui8ControlTable                              
+2000123c  unusedVar1                                   
+20001240  unusedVar2                                   
+20001244  unusedVar3                                   
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address   name                                         
+-------   ----                                         
+00000000  __TI_static_base__                           
+00000000  g_pfnVectors                                 
+00000200  __STACK_SIZE                                 
+000002b1  EXTIAIntHandler                              
+000002c1  EXTIBIntHandler                              
+000002d1  EXTICIntHandler                              
+000002e1  EXTIDIntHandler                              
+000002f1  EXTIEIntHandler                              
+00000301  EXTIFIntHandler                              
+00000311  GPIO_SetPinStatus                            
+0000039d  GPIO_SetData                                 
+00000429  GPIO_TogglePinValue                          
+0000046b  GPIO_ConfigureAlternateFunctionSelect        
+000004f7  GPIO_ConfigureAnalogModeSelect               
+00000517  GPIO_ConfigurePortControl                    
+0000056d  GPIO_ConfigureDigitalEnable                  
+0000060d  GPIO_ConfigureCommit                         
+00000683  GPIO_EXTIClearInterrupt                      
+000006c9  GPIO_ConfigureInterruptMask                  
+00000755  GPIO_ConfigureOutputPin                      
+000007a1  GPIO_SetPinDirection                         
+0000082d  GPIO_SetInputStatus                          
+00000879  GPIO_ConfigureInputPin                       
+000008d7  GPIO_ToggleBitBandBits                       
+0000090b  GPIO_ReadBitBandBits                         
+0000093d  GPIO_WriteBitBandBits                        
+000009a9  GPIO_EnableAFSEL_GPTM                        
+000009f5  GPIO_EnableAFSEL_UART                        
+00000a57  RegisterCallbackFunction                     
+00000a81  DMA_ErrorHandler                             
+00000a8d  DMA_SoftwareTransferHandler                  
+00000aa5  DMA_PeripheralInitialization                 
+00000ac1  DMA_EnableChannelAttributes                  
+00000b19  DMA_DisableChannelAttributes                 
+00000b63  DMA_ConfigureControlTableBaseAddress         
+00000b7b  DMA_EnableChannel                            
+00000b97  DMA_ChannelControlStructureSet               
+00000d01  DMA_ChannelAlternateControlStructureSet      
+00000e51  DMA_ConfigureChannelSoftwareRequest          
+00000e9d  DMA_ConfigureChannelsRequests                
+00000eb5  DMA_ConfigurePeripheralInterrupt             
+00000ee9  DMA_ConfigureChannelInterrupt                
+00000f2b  DMA_ConfigurePriority                        
+00000f6f  DMA_AssignChannel                            
+00000fbf  DMA_DeAssignChannel                          
+0000100f  DMA_MemoryToMemory_Transfer                  
+00001035  DMA_ChannelScatterGatherSet                  
+00001075  DMA_ChannelPeripheralScatterGatherSet        
+000010ad  DMA_RegisterCallbackFunction_SoftwareTransfer
+000010c7  DMA_RegisterCallbackFunction_ErrorHandler    
+00001125  NVIC_Enable_Interrupt                        
+0000115d  NVIC_Clear_Interrupt                         
+00001195  NVIC_Set_Pending                             
+000011cd  NVIC_Clear_Pending                           
+00001205  NVIC_SetPriorityGrouping                     
+00001231  NVIC_AssignPriority                          
+000013b3  SC_Initialization                            
+000014dd  SC_GetSystemClock                            
+00001545  SC_PWMClkIntialization                       
+00001579  SC_GetPWMFrequency                           
+000015a7  SC_ADC_ClkIntialization                      
+00001631  SystickHandler                               
+00001641  SysTickConfigureClockSource                  
+0000165d  SysTickGenerateDelay_Polling                 
+000016d7  Systick_RegisterCallbackFunction             
+000016e7  SysTickGenerateDelay_Interrupt               
+00001735  Systick_ClearFlag                            
+00001755  UnusedFunc1                                  
+00001783  main                                         
+00001881  __aeabi_memcpy                               
+00001881  __aeabi_memcpy4                              
+00001881  __aeabi_memcpy8                              
+00001881  memcpy                                       
+0000191d  __aeabi_uldivmod                             
+000019b3  __aeabi_memclr                               
+000019b3  __aeabi_memclr4                              
+000019b3  __aeabi_memclr8                              
+000019b5  __aeabi_memset                               
+000019b5  __aeabi_memset4                              
+000019b5  __aeabi_memset8                              
+000019bb  memset                                       
+00001a2d  __TI_decompress_lzss                         
+00001a95  __TI_auto_init_nobinit_nopinit               
+00001ad9  _c_int00_noargs                              
+00001b0d  rand                                         
+00001b41  __TI_decompress_none                         
+00001b4f  __TI_zero_init                               
+00001b5b  ResetISR                                     
+00001b67  _system_pre_init                             
+00001b6b  C$$EXIT                                      
+00001b6b  abort                                        
+00001b6f  _nop                                         
+00001b71  __aeabi_idiv0                                
+00001b71  __aeabi_ldiv0                                
+00001b74  SourceAddressPointerRegisters                
+00001bf4  AlternateSourceAddressPointerRegisters       
+00001c74  DestinationAddressPointerRegisters           
+00001cf4  AlternateDestinationAddressPointerRegisters  
+00001fc4  SC_SYSDIV                                    
+00001fd4  SC_PWMDIV                                    
+00002174  __TI_Handler_Table_Base                      
+00002180  __TI_Handler_Table_Limit                     
+00002188  __TI_CINIT_Base                              
+00002198  __TI_CINIT_Limit                             
+20000000  DestBuffer_DMA                               
+20000000  __start___llvm_prf_cnts                      
+20000000  __stop___llvm_prf_cnts                       
+20000400  SourceBuffer_DMA                             
+20000800  ui8ControlTable                              
+20000c00  SourceArray512                               
+20000e00  ListDest                                     
+20000e18  MySystemClock                                
+20000e1c  DMAChannel8_UARTChannel0RX                   
+20000e2c  DMAChannel9_UARTChannel0TX                   
+20000e3c  DMAChannel22_UARTChannel1RX                  
+20000e4c  DMAChannel23_UARTChannel1TX                  
+20000e5c  DMAChannel0_UARTChannel2RX                   
+20000e6c  DMAChannel23_UARTChannel2TX                  
+20000e7c  DMAChannel16_UARTChannel3RX                  
+20000e8c  DMAChannel17_UARTChannel3TX                  
+20000e9c  DMAChannel18_UARTChannel4RX                  
+20000eac  DMAChannel19_UARTChannel4TX                  
+20000ebc  DMAChannel6_UARTChannel5RX                   
+20000ecc  DMAChannel7_UARTChannel5TX                   
+20000edc  DMAChannel10_UARTChannel6RX                  
+20000eec  DMAChannel11_UARTChannel6TX                  
+20000efc  DMAChannel20_UARTChannel7RX                  
+20000f0c  DMAChannel21_UARTChannel7TX                  
+20000f1c  DMA_ChannelsConfigTX                         
+20000f3c  DMA_ChannelsConfigRX                         
+20000f5c  DMAChannel0_MemToMem                         
+20000f6c  DMAChannel1_MemToMem                         
+20000f7c  DMAChannel30_MemToMem                        
+20000f8c  DMAChannel28_MemToMem                        
+20000f9c  DMAChannel29_MemToMem                        
+20000fac  DMAChannel26_MemToMem                        
+20000fbc  Pt_DMAChannel30_MemToMem                     
+20000fc0  Pt_DMAChannel28_MemToMem                     
+20000fc4  Pt_DMAChannel29_MemToMem                     
+20000fc8  Pt_DMAChannel0_MemToMem                      
+20000fcc  Pt_DMAChannel1_MemToMem                      
+20000fd0  DMA_ControlTable_Arr                         
+20001000  DMA_ControlTable_PeripheralScatterGatherArr  
+20001030  ScatterGatherFlag                            
+20001144  handlerCounter                               
+20001148  UARTDMA_TxFlag                               
+20001149  UARTDMA_RxFlag                               
+2000114a  UART_InterruptNum_Arr                        
+200011f4  charater1                                    
+200011f8  ptr_charater1                                
+200011fc  ListA                                        
+20001200  ListB                                        
+20001204  ListC                                        
+20001208  ListD                                        
+20001210  ListE                                        
+20001218  ListF                                        
+20001220  IndexCounter                                 
+20001224  SourceBufferUART                             
+2000122c  indexCounter                                 
+20001230  SourceIndexCounterDMA                        
+20001234  SourceIndexCounterDMA356                     
+20001238  IdleLoopCounter                              
+2000123c  unusedVar1                                   
+20001240  unusedVar2                                   
+20001244  unusedVar3                                   
+20001260  GPIO_BIT_BAND_Registers                      
+20001278  GPIO_ConfigurePin_PF4                        
+2000127a  GPIO_ConfigurePin_PF2                        
+2000127c  GPIO_ConfigurePin_PF1                        
+2000127e  GPIO_ConfigurePin_PF0                        
+20001280  GPIO_ConfigurePin_PF3                        
+20001284  _lock                                        
+20001288  _unlock                                      
+20001298  __stack                                      
+20001498  __STACK_END                                  
+20001498  __STACK_TOP                                  
+ffffffff  __TI_pprof_out_hndl                          
+ffffffff  __TI_prof_data_size                          
+ffffffff  __TI_prof_data_start                         
+ffffffff  __binit__                                    
+ffffffff  __c_args__                                   
+ffffffff  binit                                        
+UNDEFED   __mpu_init                                   
+UNDEFED   _system_post_cinit                           
+
+[184 symbols]
